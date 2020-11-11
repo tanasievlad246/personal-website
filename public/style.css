@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Pacifico';
+  line-height: 0.5;
+  font-size: 50px;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Open Sans';
+  line-height: 0.5;
+}
+
+.btn {
+  background-color: none;
+  border: none;
+  height: 60px;
+  width: 150px;
+  border-radius: 35px;
+  font-size: 20px;
+}
+
+.btn-main {
+  background: rgba(34, 96, 255, 0.55);
+}
+
+.btn-main:hover {
+  background: rgba(34, 96, 255, 0.75);
+}
+
+.home-headings-wrapper {
+  margin: 0 auto;
+}
