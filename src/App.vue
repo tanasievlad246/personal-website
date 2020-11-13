@@ -1,13 +1,13 @@
 <template>
   <div class="container">
     <Navbar />
-    <div class="top--svg--container">
-      <img
-        src="./assets/illustrations/top_drip.svg"
-        alt="paint cloud"
-        class="top--drip"
-      />
-    </div>
+
+    <img
+      src="./assets/illustrations/top_drip.svg"
+      alt="paint cloud"
+      class="top--drip"
+    />
+
     <transition name="fade" mode="out-in">
       <router-view :key="$route.path" />
     </transition>
@@ -28,11 +28,6 @@ export default {
 </script>
 
 <style>
-/* .top--svg--container {
-  width: 0px;
-  overflow: hidden;
-} */
-
 .container {
   display: flex;
   flex-direction: column;
@@ -41,11 +36,8 @@ export default {
 
 .top--drip {
   position: absolute;
-  width: 100%;
-  /* height: auto; */
-  top: -100px;
-  /* left: 200px; */
+  right: 0;
+  top: -80px;
   z-index: -1;
-  /* overflow: hidden; */
 }
 </style>

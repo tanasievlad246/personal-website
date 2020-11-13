@@ -32,6 +32,7 @@ a {
   align-content: center;
   box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.25);
   background-color: none;
+  width: 100vw;
 }
 
 .navbar ul li a:hover {
@@ -45,7 +46,8 @@ a {
   width: 90vw;
   list-style: none;
   justify-content: flex-end;
-  margin-top: 25px;
+  /* margin-top: 25px; */
+  align-items: center;
 }
 
 .link-list li {
