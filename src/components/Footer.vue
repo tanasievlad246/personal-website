@@ -1,18 +1,22 @@
 <template>
   <div class="footer-wrapper">
     <div>
-      <img
-        src="../assets/illustrations/linkedin 1icon.svg"
-        alt=""
-        class="social-icon"
-      />
+      <a href="">
+        <img
+          src="../assets/illustrations/linkedin 1icon.svg"
+          alt=""
+          class="social-icon"
+        />
+      </a>
     </div>
     <div>
-      <img
-        src="../assets/illustrations/github 1github.svg"
-        alt=""
-        class="social-icon"
-      />
+      <a href="">
+        <img
+          src="../assets/illustrations/github 1github.svg"
+          alt=""
+          class="social-icon"
+        />
+      </a>
     </div>
   </div>
 </template>
@@ -30,7 +34,7 @@ export default {};
   justify-content: flex-end;
   align-items: flex-end;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .social-icon {

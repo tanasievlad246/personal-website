@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap');
+@import './mobile-queries.css';
 
 body {
   padding: 0;
@@ -19,6 +20,10 @@ h5 {
   line-height: 0.5;
 }
 
+p {
+  font-family: 'Open Sans';
+}
+
 .btn {
   background-color: none;
   border: none;
@@ -34,8 +39,4 @@ h5 {
 
 .btn-main:hover {
   background: rgba(34, 96, 255, 0.75);
-}
-
-.home-headings-wrapper {
-  margin: 0 auto;
 }

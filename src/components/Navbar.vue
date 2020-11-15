@@ -2,7 +2,9 @@
   <div>
     <nav class="navbar">
       <div>
-        <a href="/"><img src="../assets/Logo.svg" alt="logo" class="logo" /></a>
+        <router-link to="/"
+          ><img src="../assets/Logo.svg" alt="logo" class="logo"
+        /></router-link>
       </div>
       <ul class="link-list">
         <li><router-link to="/about">ABOUT</router-link></li>
@@ -36,9 +38,6 @@ a {
 }
 
 .navbar ul li a:hover {
-  border-bottom: 3px solid black;
-  /* border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px; */
 }
 
 .link-list {

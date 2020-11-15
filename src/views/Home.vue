@@ -5,7 +5,9 @@
       <h2>Web Developer</h2>
       <h2>Programmer</h2>
       <h2>Student</h2>
-      <button class="btn btn-main">More</button>
+      <router-link to="/about">
+        <button class="btn btn-main">More</button>
+      </router-link>
     </div>
     <div class="image-wrapper">
       <img
@@ -17,13 +19,16 @@
 </template>
 
 <script>
-export default {};
+export default {
+ 
+};
 </script>
 
 <style>
 .wrapper {
   display: flex;
   flex-direction: row;
+  height: 100%;
   /* align-content: center; */
   /* justify-content: center; */
 }
@@ -50,5 +55,6 @@ export default {};
   /* flex: 4; */
   align-self: center;
   justify-self: center;
+  margin: 0 auto;
 }
 </style>
