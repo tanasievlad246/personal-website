@@ -69,9 +69,7 @@ export default {
   display: flex;
   flex-direction: column;
   height: 100%;
-  /* align-content: flex-end; */
-  /* justify-content: flex-end; */
-  /* height: 150px; */
+  justify-content: flex-end;
 }
 
 .project-image img {

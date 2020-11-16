@@ -1,5 +1,10 @@
 <template>
   <div class="projects-container">
+    <img
+      src="../assets/illustrations/projects_ilustration 1.svg"
+      alt=""
+      class="projects--ilustration"
+    />
     <h1 v-if="projectData.length <= 0">Error fetching the projects</h1>
     <div>
       <ProjectCard
@@ -47,5 +52,12 @@ export default {
   display: flex;
   flex-direction: column;
   padding: 50px;
+}
+
+.projects--ilustration {
+  position: absolute;
+  right: 50px;
+  top: 200px;
+  z-index: -1;
 }
 </style>
