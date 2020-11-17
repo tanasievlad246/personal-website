@@ -28,6 +28,23 @@ p {
   font-family: 'Open Sans';
 }
 
+textarea {
+  resize: none;
+  font-family: 'Open Sans';
+}
+
+label {
+  font-family: 'Open Sans';
+}
+
+input[type='text'] {
+  font-family: 'Open Sans';
+}
+
+.mt5 {
+  margin-top: 25px;
+}
+
 .btn {
   background-color: none;
   border: none;

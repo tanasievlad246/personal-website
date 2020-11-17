@@ -1,5 +1,6 @@
 <template>
   <div class="footer-wrapper">
+    <p>tanasievladcristian@gmail.com</p>
     <div>
       <a href="">
         <img

@@ -34,14 +34,10 @@ export default {
     async beforeMount() {
         const response = await axios.get("https://api.github.com/users/tanasievlad246/repos");
         this.projectData = response.data;
-        console.log(this.finalProjects);
-        console.log(response.data);
     },
     computed: {
         finalProjects: function () {
-            return this.projectData.filter(
-                project => project.description != null
-            )
+            return this.projectData.filter(project => project.description != null)
         }
     }
 }
