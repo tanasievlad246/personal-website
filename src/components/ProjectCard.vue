@@ -94,5 +94,9 @@ export default {
   .link-to-project img {
     padding: 0 5px 0 5px;
   }
+
+  .project-description h2 {
+    font-size: 20px;
+  }
 }
 </style>
