@@ -35,7 +35,6 @@ export default {};
   justify-content: flex-end;
   align-items: flex-end;
   width: 100%;
-  height: 100%;
 }
 
 .social-icon {

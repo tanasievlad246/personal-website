@@ -5,7 +5,10 @@
       alt=""
       class="projects--ilustration"
     />
-    <h1 v-if="finalProjects.length <= 0">Error fetching the projects</h1>
+    <div class="error">
+      <h1 v-if="finalProjects.length <= 0">Error fetching the projects</h1>
+    </div>
+
     <div class="cards-container">
       <ProjectCard
         v-for="project in finalProjects"
@@ -49,6 +52,7 @@ export default {
   flex-direction: column;
   padding: 50px;
   padding-top: 0;
+  height: 100%;
 }
 
 .projects--ilustration {
@@ -56,6 +60,10 @@ export default {
   right: 50px;
   top: 200px;
   z-index: -1;
+}
+
+.error {
+  /* height: 100%; */
 }
 
 @media screen and (max-width: 1125px) {
