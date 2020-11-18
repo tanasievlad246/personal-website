@@ -62,4 +62,10 @@ export default {
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 1145px) {
+  .top--drip {
+    display: none;
+  }
+}
 </style>

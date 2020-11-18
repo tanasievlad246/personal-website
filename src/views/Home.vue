@@ -29,18 +29,9 @@ export default {
   display: flex;
   flex-direction: row;
   height: 100%;
-  /* align-content: center; */
-  /* justify-content: center; */
 }
 
 .image-wrapper {
-  /* position: absolute; */
-  /* z-index: -1; */
-  /* left: 650px;
-  top: 150px; */
-  /* flex: 8; */
-  /* align-self: center; */
-  /* justify-self: center; */
   padding-top: 60px;
   padding-right: 150px;
 }
@@ -50,11 +41,19 @@ export default {
 }
 
 .home-headings-wrapper {
-  /* padding-left: 250px; */
-  /* padding-top: 200px; */
-  /* flex: 4; */
   align-self: center;
   justify-self: center;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1160px) {
+  .wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .image-wrapper {
+    display: none;
+  }
 }
 </style>

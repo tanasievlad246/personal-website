@@ -4,7 +4,12 @@
       <h3 v-if="this.error != ''" style="color: red; font-family: 'Open Sans'">
         {{ this.error }}
       </h3>
-      <h3 v-else style="margin: 0 !important">Lets get in contact!</h3>
+      <h3
+        v-else-if="success"
+        style="margin: 0 !important; color: rgba(34, 96, 255, 0.55)"
+      >
+        {{ success }}
+      </h3>
       <label for="name">Name</label>
       <input
         type="text"
@@ -48,7 +53,8 @@ export default {
       name: '',
       email: '',
       message: '',
-      error: ''
+      error: '',
+      success: ''
     }
   },
   methods: { 
@@ -60,7 +66,7 @@ export default {
           email: this.email,
           message: this.message
         })
-
+        this.success = 'Message was sent successfully!';
       } catch(error) {
           this.error = "Message could not be sent"
       }
@@ -79,6 +85,7 @@ export default {
   /* padding: 50px; */
   padding-left: 50px;
   padding-top: 35px;
+  height: 100%;
 }
 
 .contact-ilustration {

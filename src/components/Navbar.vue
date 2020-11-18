@@ -6,12 +6,24 @@
           ><img src="../assets/Logo.svg" alt="logo" class="logo"
         /></router-link>
       </div>
-      <ul class="link-list">
-        <li><router-link to="/about">ABOUT</router-link></li>
-        <li><router-link to="/portofolio">PORTOFOLIO</router-link></li>
-        <li><a href="#">BLOG</a></li>
-        <li><router-link to="/contact">CONTACT</router-link></li>
-      </ul>
+
+      <div class="menu-container"></div>
+
+      <div class="link-list">
+        <!-- <img src="../assets/icons/menu.svg" alt="" class="burger-menu" /> -->
+        <label for="toggle" class="burger-menu">&#9776;</label>
+        <input type="checkbox" name="toggle" id="toggle" />
+        <div class="links">
+          <a><router-link to="/about">ABOUT</router-link></a>
+          <a><router-link to="/portofolio">PORTOFOLIO</router-link></a>
+          <a>
+            <a href="https://medium.com/@tanasievladcristian" target="_blank"
+              >BLOG</a
+            >
+          </a>
+          <a><router-link to="/contact">CONTACT</router-link></a>
+        </div>
+      </div>
     </nav>
   </div>
 </template>
@@ -37,7 +49,9 @@ a {
   width: 100vw;
 }
 
-.navbar ul li a:hover {
+.links {
+  display: flex;
+  flex-direction: row;
 }
 
 .link-list {
@@ -49,8 +63,70 @@ a {
   align-items: center;
 }
 
-.link-list li {
+.link-list a {
   /* margin-left: 25px; */
   padding-left: 15px;
+}
+
+.burger-menu {
+  display: none;
+  font-size: 35px;
+  font-weight: bolder;
+  cursor: pointer;
+  z-index: 3;
+}
+
+/* .menu-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+} */
+
+#toggle {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  .logo {
+    width: 45px;
+    height: 45px;
+  }
+
+  .burger-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+  }
+
+  .links {
+    display: none;
+    text-align: center;
+    align-self: center;
+  }
+
+  .links a {
+    padding: 5px 0 5px 0;
+  }
+
+  .link-list {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0;
+  }
+
+  #toggle:checked + .links {
+    display: block;
+    position: relative;
+    right: 20px;
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .links {
+    padding-right: 15px;
+  }
 }
 </style>

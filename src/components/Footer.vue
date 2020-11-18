@@ -2,19 +2,19 @@
   <div class="footer-wrapper">
     <p>tanasievladcristian@gmail.com</p>
     <div>
-      <a href="">
+      <a href="https://www.linkedin.com/in/tanasie-vlad/">
         <img
           src="../assets/illustrations/linkedin 1icon.svg"
-          alt=""
+          alt="Linkedin"
           class="social-icon"
         />
       </a>
     </div>
     <div>
-      <a href="">
+      <a href="https://github.com/tanasievlad246">
         <img
           src="../assets/illustrations/github 1github.svg"
-          alt=""
+          alt="Github"
           class="social-icon"
         />
       </a>
@@ -35,7 +35,7 @@ export default {};
   justify-content: flex-end;
   align-items: flex-end;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .social-icon {
