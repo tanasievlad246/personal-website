@@ -31,6 +31,7 @@ export default {
 .container {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 .top--drip {

@@ -52,7 +52,6 @@ export default {
   flex-direction: column;
   padding: 50px;
   padding-top: 0;
-  height: 100%;
 }
 
 .projects--ilustration {
@@ -60,10 +59,6 @@ export default {
   right: 50px;
   top: 200px;
   z-index: -1;
-}
-
-.error {
-  /* height: 100%; */
 }
 
 @media screen and (max-width: 1125px) {
