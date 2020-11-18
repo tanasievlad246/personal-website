@@ -32,7 +32,7 @@ export default {
         }
     },
     async beforeMount() {
-        const response = await axios.get("https://api.github.com/users/tanasievlad246/reposi");
+        const response = await axios.get("https://api.github.com/users/tanasievlad246/repos");
         this.projectData = response.data;
     },
     computed: {
