@@ -50,8 +50,6 @@ export default {
 .details-container {
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start; */
-  /* justify-content: center; */
   width: 100%;
 }
 
@@ -61,5 +59,30 @@ export default {
   align-items: flex-end;
   justify-content: center;
   width: 100%;
+}
+
+@media screen and (max-width: 1390px) {
+  .svg-container img {
+    height: auto;
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .svg-container img {
+    display: none;
+  }
+  .details-container {
+    font-size: 20px;
+  }
+  .about-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .details-container {
+    font-size: 15px;
+  }
 }
 </style>

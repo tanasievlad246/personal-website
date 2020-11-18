@@ -73,7 +73,26 @@ export default {
 }
 
 .project-image img {
-  height: 150px;
-  width: auto;
+  height: auto;
+  width: 150px;
+}
+
+@media screen and (max-width: 1125px) {
+  .project-cards {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .project-cards {
+    flex-direction: column;
+  }
+
+  .link-to-project {
+    flex-direction: row;
+  }
+  .link-to-project img {
+    padding: 0 5px 0 5px;
+  }
 }
 </style>

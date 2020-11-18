@@ -97,6 +97,7 @@ a {
     display: block;
     position: absolute;
     top: 0;
+    padding-right: 5px;
   }
 
   .links {
@@ -127,6 +128,12 @@ a {
 @media screen and (max-width: 1250px) {
   .links {
     padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .navbar {
+    background-color: rgba(34, 96, 255, 0.55);
   }
 }
 </style>

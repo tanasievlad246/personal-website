@@ -5,8 +5,8 @@
       alt=""
       class="projects--ilustration"
     />
-    <h1 v-if="projectData.length <= 0">Error fetching the projects</h1>
-    <div>
+    <h1 v-if="finalProjects.length <= 0">Error fetching the projects</h1>
+    <div class="cards-container">
       <ProjectCard
         v-for="project in finalProjects"
         :key="project.id"
@@ -48,6 +48,7 @@ export default {
   display: flex;
   flex-direction: column;
   padding: 50px;
+  padding-top: 0;
 }
 
 .projects--ilustration {
@@ -55,5 +56,17 @@ export default {
   right: 50px;
   top: 200px;
   z-index: -1;
+}
+
+@media screen and (max-width: 1125px) {
+  .projects--ilustration {
+    display: none;
+  }
+  .cards-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 </style>

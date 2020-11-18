@@ -82,7 +82,6 @@ export default {
 <style>
 .contact-container {
   display: flex;
-  /* padding: 50px; */
   padding-left: 50px;
   padding-top: 35px;
   height: 100%;
@@ -126,9 +125,35 @@ export default {
 
 .contact-form textarea:focus {
   outline-color: rgba(34, 96, 255, 0.55);
+  /* height: 50%; */
 }
 
 .contact-form button {
   height: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact-form {
+    width: 100vw;
+  }
+
+  .contact-container {
+    padding: 20px;
+    height: 100%;
+  }
+
+  .contact-form textarea {
+    height: 30%;
+  }
+
+  .contact-ilustration {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .contact-form textarea {
+    height: 50%;
+  }
 }
 </style>

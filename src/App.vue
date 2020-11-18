@@ -63,7 +63,7 @@ export default {
   }
 }
 
-@media screen and (max-width: 1145px) {
+@media screen and (max-width: 1100px) {
   .top--drip {
     display: none;
   }
