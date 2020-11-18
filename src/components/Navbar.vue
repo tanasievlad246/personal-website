@@ -39,6 +39,7 @@ a {
   display: block;
   text-decoration: none;
   color: black;
+  transition: display 0.2s ease-in;
 }
 
 .navbar {

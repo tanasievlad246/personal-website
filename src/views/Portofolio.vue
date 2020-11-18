@@ -32,7 +32,7 @@ export default {
         }
     },
     async beforeMount() {
-        const response = await axios.get("https://api.github.com/users/tanasievlad246/repos");
+        const response = await axios.get("https://api.github.com/users/tanasievlad246/reposi");
         this.projectData = response.data;
     },
     computed: {
@@ -67,6 +67,12 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .projects-container h1 {
+    font-size: 35px;
+    line-height: 1;
+    /* text-overflow: clip; */
   }
 }
 </style>
