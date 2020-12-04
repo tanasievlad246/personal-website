@@ -82,6 +82,9 @@ export default {
 <style>
 .contact-container {
   display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   padding-left: 50px;
   padding-top: 35px;
   height: 100%;
@@ -96,6 +99,9 @@ export default {
 
 .contact-form {
   display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   flex-direction: column;
   padding: 30px;
   width: 50vw;

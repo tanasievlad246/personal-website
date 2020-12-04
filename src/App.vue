@@ -30,6 +30,9 @@ export default {
 <style>
 .container {
   display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   flex-direction: column;
   height: 100vh;
 }

@@ -40,6 +40,9 @@ export default {
 <style>
 .about-container {
   display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   flex-direction: row;
   height: 100%;
   justify-content: center;
@@ -49,12 +52,18 @@ export default {
 
 .details-container {
   display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   flex-direction: column;
   width: 100%;
 }
 
 .svg-container {
   display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;

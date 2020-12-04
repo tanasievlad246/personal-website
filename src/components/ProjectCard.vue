@@ -42,6 +42,9 @@ export default {
 <style>
 .project-cards {
   display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   width: 50vw;
   padding: 15px;
   margin-top: 50px;
@@ -67,6 +70,9 @@ export default {
 
 .link-to-project {
   display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   flex-direction: column;
   height: 100%;
   justify-content: flex-end;

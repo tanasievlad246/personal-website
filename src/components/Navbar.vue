@@ -10,15 +10,13 @@
       <div class="menu-container"></div>
 
       <div class="link-list">
-        <!-- <img src="../assets/icons/menu.svg" alt="" class="burger-menu" /> -->
         <label for="toggle" class="burger-menu">&#9776;</label>
         <input type="checkbox" name="toggle" id="toggle" />
         <div class="links">
           <a><router-link to="/about">ABOUT</router-link></a>
           <a><router-link to="/portofolio">PORTOFOLIO</router-link></a>
           <a>
-            <a href="https://medium.com/@tanasievladcristian" target="_blank"
-              >BLOG</a
+            <a href="https://medium.com/@tanasievladcristian" rel="noopener noreferrer" target="_blank">BLOG</a
             >
           </a>
           <a><router-link to="/contact">CONTACT</router-link></a>
@@ -44,6 +42,9 @@ a {
 
 .navbar {
   display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   align-content: center;
   box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.25);
   background-color: none;
@@ -52,20 +53,24 @@ a {
 
 .links {
   display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   flex-direction: row;
 }
 
 .link-list {
   display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   width: 90vw;
   list-style: none;
   justify-content: flex-end;
-  /* margin-top: 25px; */
   align-items: center;
 }
 
 .link-list a {
-  /* margin-left: 25px; */
   padding-left: 15px;
 }
 
@@ -76,13 +81,6 @@ a {
   cursor: pointer;
   z-index: 3;
 }
-
-/* .menu-container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-} */
 
 #toggle {
   display: none;

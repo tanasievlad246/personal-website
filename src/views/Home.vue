@@ -27,6 +27,9 @@ export default {
 <style>
 .wrapper {
   display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   flex-direction: row;
   height: 100%;
 }

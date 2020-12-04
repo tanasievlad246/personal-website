@@ -49,9 +49,13 @@ export default {
 <style>
 .projects-container {
   display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   flex-direction: column;
   padding: 50px;
   padding-top: 0;
+  height: 100%;
 }
 
 .projects--ilustration {
@@ -68,6 +72,9 @@ export default {
   .cards-container {
     text-align: center;
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
     flex-direction: column;
     align-items: center;
   }
